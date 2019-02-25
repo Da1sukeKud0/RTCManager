@@ -1,0 +1,5 @@
+#!/bin/sh
+javac --source-path src -d bin ~/workspace/java/RTCManager/src/dijkstra/Dijkstra.java
+\cd bin
+java rtcManager/RTCManager
+\cd ..

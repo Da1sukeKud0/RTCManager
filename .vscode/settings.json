@@ -1,0 +1,8 @@
+{
+    "code-runner.executorMap": {
+        // "java": "cd $dir && cd .. && javac -d ../bin rtcManager/RTCManager.java && java rtcManager/RTCManager",
+        "java": "cd $dir && cd ../.. && javac --source-path src -d bin $fullFileName && cd bin && java rtcManager/RTCManager"
+    },
+    "code-runner.clearPreviousOutput": true,
+    // "code-runner.runInTerminal": true,
+}
