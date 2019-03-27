@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -102,6 +103,7 @@ public class Dijkstra {
 			paths.remove(0);
 			paths.add(0, src);
 		}
+		Optional<List<Integer>> ret = Optional.ofNullable(paths);
 		return distance[dst] != INF;
 	}
 
